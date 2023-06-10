@@ -11,6 +11,15 @@ root.render(
   </React.StrictMode>
 );
 
+
+/*
+옛날버전은 다들 이렇게 돼 있음
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+)
+*/
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
