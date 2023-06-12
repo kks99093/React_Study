@@ -38,9 +38,13 @@ function Sub()  {
             sample.push({id:2, name:"라마바"});
             이런식으로 적으면 레퍼런스(주소값)가 같기에 렌더링 되지 않음
             그렇기에 스프레드나 concat으로 복사를 통한 렌더링을 변경해줘야함 (App.js에 적어놨음)
-            const a = sample.concat({id : 2, name: "라마바"});
-            setUsers(a)            
-            
+
+            방법1.  const a = sample.concat({id : 2, name: "라마바"});
+                    setUsers(a)
+
+            방법2.  setUsers([...sample, {id:2, name:"라마바"}]);
+
+            ++ 값을 받아와서 넣는경우 fetch().then().then();을 이용
         }
     */
     
